@@ -8,6 +8,7 @@ int a=40;
 int speed=3;
 int speed_y=0;
 int key_press=0;
+color player_color=#ffffff;
 boolean game_over=false;
 void setup(){
   size(600,600);
@@ -54,15 +55,19 @@ rect(rect_x,rect_y , 20, 20);
       move_y=-move_y;
     }
         
-            }
-            {
+
+	fill(hex(player_color));	    
        ellipse(x, y, 50, 50);}
  {fill(#0000FF);
  ellipse(x-10,y-10,10,15);}
  {fill(#0000FF);
  ellipse(x+10,y-10,10,15);}
  {fill(0);
+ if(!game_over){
  arc(x,y+10,20,16,3,6.5);
+ }esle{
+	 arc(x,y-10,20,16,3,6.5);
+ }
  };
 		 
 		 
@@ -75,7 +80,7 @@ if(int(sqrt(pow(x-rect_x,2)+pow(y-rect_y,2)))==50){
        textSize(20);
          fill(255,255,255);
 	 text("key count",10,30);
-	 text(key_press,100,30);
+	 text(key_press,120,30);
            
            
            
@@ -108,11 +113,13 @@ if(int(sqrt(pow(x-rect_x,2)+pow(y-rect_y,2)))==50){
 	  
 	  
 if(game_over==true){
+	player_color=#ffff00
 	 textSize(50);
          fill(255,255,255);
    	text("gameover!!",height/2,weidth/2);
 	move_x=0;
 	move_y=0;
+	
 		
 	}	  
  
