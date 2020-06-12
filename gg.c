@@ -64,16 +64,25 @@ rect(rect_x,rect_y , 20, 20);
  arc(x,y+10,20,16,3,6.5);
  }
   
+       textSize(20);
+         fill(255,255,255);
+					 text("keycount:",10,30);
+						 text(key_press,30,30);
+           
+           
+           
+           
+ 
  if(key_press>15){
     textSize(20);
            fill(255,255,255);
-   text("Mouse activated",10,10);
+   text("Mouse activated",10,50);
  };
            
   
            
- // y=y+speed_y;        
-  //x=x+speed;
+  y=y+speed_y;        
+  x=x+speed;
  if(x>width-1){
    speed=speed*-1;}
    else if (x<0){
