@@ -66,8 +66,8 @@ rect(rect_x,rect_y , 20, 20);
   
        textSize(20);
          fill(255,255,255);
-					 text("keycount:",10,30);
-						 text(key_press,30,30);
+	 text(cocat("keycount: ",key_press),10,30);
+	// text(key_press,30,30);
            
            
            
