@@ -6,6 +6,8 @@ int x=300;
 int y= 300;
 int a=40;
 int speed=3;
+int speed_y=0;
+int key_press=0;
 void setup(){
   size(600,600);
 frameRate(60);}
@@ -61,14 +63,28 @@ rect(rect_x,rect_y , 20, 20);
  {fill(0);
  arc(x,y+10,20,16,3,6.5);
  }
-  x=x+speed;
+  
+ if(key_press>15){
+    textsize(10);
+           fill(0,0,0);
+   text("Mouse activated",10,10);
+ };
+           
+  
+           
+ // y=y+speed_y;        
+  //x=x+speed;
  if(x>width-1){
    speed=speed*-1;}
    else if (x<0){
      speed=speed*-1;}
+           
   if(keyPressed){
-    if(key=="d"){x=x+5};
-    if(key=="a"){x=x-5};
+    if(key=='d'){x=x+5;};
+    if(key=='a'){x=x-5;};
+    if(key=='w'){y=y+5};
+    if(key=='s'){y=y-5}
+    
   }
  
 
@@ -77,10 +93,11 @@ rect(rect_x,rect_y , 20, 20);
 
 
 void mousePressed() {
- 
-  x = mouseX;
-  y = mouseY; 
+ if(key_press>15){
+    x = mouseX;
+    y = mouseY; 
+ };
 
 
-      }
+}
       
