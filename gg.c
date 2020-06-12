@@ -111,6 +111,8 @@ if(game_over==true){
 	 textSize(50);
          fill(255,255,255);
    	text("gameover!!",height/2,weidth/2);
+	move_x=0;
+	move_y=0;
 		
 	}	  
  
@@ -122,7 +124,7 @@ if(game_over==true){
 
 
 void mousePressed() {
- if(key_press>15){
+ if(key_press>15 && !game_over){
     x = mouseX;
     y = mouseY; 
  };
