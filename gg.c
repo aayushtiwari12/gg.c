@@ -80,10 +80,10 @@ rect(rect_x,rect_y , 20, 20);
      speed=speed*-1;}
            
   if(keyPressed){
-    if(key=='d'){x=x+5;};
-    if(key=='a'){x=x-5;};
-    if(key=='w'){y=y+5};
-    if(key=='s'){y=y-5}
+    if(key=='d'){x=x+5;key_press+=1;};
+    if(key=='a'){x=x-5;key_press+=1;};
+    if(key=='w'){y=y-5;key_press+=1;};
+    if(key=='s'){y=y+5;key_press+=1;};
     
   }
  
