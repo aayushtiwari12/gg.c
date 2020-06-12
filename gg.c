@@ -65,7 +65,7 @@ rect(rect_x,rect_y , 20, 20);
  }
   
  if(key_press>15){
-    textsize(10);
+    textSize(10);
            fill(0,0,0);
    text("Mouse activated",10,10);
  };
