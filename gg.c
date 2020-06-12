@@ -102,18 +102,22 @@ if(int(sqrt(pow(x-rect_x,2)+pow(y-rect_y,2)))==50){
     	if(key=='a'){x=x-5;key_press+=1;};
     	if(key=='w'){y=y-5;key_press+=1;};
     	if(key=='s'){y=y+5;key_press+=1;};
+	 };
     	
   };
 	  
-	if(game_over==true){
-		    textSize(50);
-           fill(255,255,255);
-   text("gameover!!",height/2,weidth/2);
+	  
+if(game_over==true){
+	 textSize(50);
+         fill(255,255,255);
+   	text("gameover!!",height/2,weidth/2);
 		
-	}
+	}	  
  
 
 }
+
+		 
 
 
 
