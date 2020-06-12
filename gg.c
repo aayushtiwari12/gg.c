@@ -66,7 +66,8 @@ rect(rect_x,rect_y , 20, 20);
  if(!game_over){
  arc(x,y+10,20,16,3,6.5);
  }else{
-	 arc(x,y-10,20,16,3,6.5);
+	 //arc(x,y+10,20,16,3,6.5);
+	 arc(x,y+10, 20, 20, 0, PI, CHORD);
  }
  };
 		 
