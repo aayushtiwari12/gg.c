@@ -56,7 +56,7 @@ rect(rect_x,rect_y , 20, 20);
     }
         
 
-	fill(hex(player_color));	    
+	fill(player_color);	    
        ellipse(x, y, 50, 50);}
  {fill(#0000FF);
  ellipse(x-10,y-10,10,15);}
@@ -65,7 +65,7 @@ rect(rect_x,rect_y , 20, 20);
  {fill(0);
  if(!game_over){
  arc(x,y+10,20,16,3,6.5);
- }esle{
+ }else{
 	 arc(x,y-10,20,16,3,6.5);
  }
  };
@@ -113,7 +113,7 @@ if(int(sqrt(pow(x-rect_x,2)+pow(y-rect_y,2)))==50){
 	  
 	  
 if(game_over==true){
-	player_color=#ffff00
+	player_color=#ffff00;
 	 textSize(50);
          fill(255,255,255);
    	text("gameover!!",height/2,weidth/2);
