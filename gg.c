@@ -66,16 +66,15 @@ rect(rect_x,rect_y , 20, 20);
    speed=speed*-1;}
    else if (x<0){
      speed=speed*-1;}
+  if(keyPressed){
+    if(key=="d"){x=x+5};
+    if(key=="a"){x=x-5};
+  }
  
 
 }
 
-void keyPressed(){
-  if (key == CODED) {
-    if (keyCode == RIGHT) { x=x+4;}
-    if(keyCode==LEFT){x=x-4;};
 
-}
 
 void mousePressed() {
  
