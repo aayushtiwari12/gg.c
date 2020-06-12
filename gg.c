@@ -8,7 +8,7 @@ int a=40;
 int speed=3;
 int speed_y=0;
 int key_press=0;
-int timer=51
+int timer=51;
 color player_color=#ffffff;
 boolean game_over=false;
 void setup(){
@@ -30,7 +30,7 @@ if(timer>50){
       noStroke();
     fill(random(135),12,123);
     rect(0,400,600,200);}
-	timer=0};
+	timer=0;
 		
 }
 		 timer+=1;
