@@ -70,12 +70,18 @@ rect(rect_x,rect_y , 20, 20);
 
 }
 
+void keyPressed(){
+  if (key == CODED) {
+    if (keyCode == RIGHT) { x=x+4;}
+    if(keyCode==LEFT){x=x-4;};
+
+}
+
 void mousePressed() {
  
   x = mouseX;
   y = mouseY; 
-  void keyPressed (){
-    if 
+
 
       }
       
