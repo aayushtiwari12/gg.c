@@ -7,15 +7,20 @@ float temp=0;
 void setup(){
 	size(650,650);
 	frameRate(60);
-	background(gray);
+	background(gray)
 
 };
 
 
 void draw(){
 	for(int i=0;i<6;i++){
-		temp=(i+1)/4;
+		temp=(i+1)/4
+		if(i==3){
+			draw_bunn(x,y,c[3]);
+		}else{
 		draw_bunn(x,y,c[int((temp-int(temp))*4)-1]);
+		};
+
 		x+=60;
 		x+=10;
 	}
@@ -52,4 +57,3 @@ void draw_bunn(int x,int y,color c){
 
 
 }
-      
