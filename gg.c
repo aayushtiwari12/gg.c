@@ -4,12 +4,13 @@ int y=10;
 color[] c={#8f00ff,#fffdd0,#ffa500,#00ff00};
 float temp=0;
 
-void setup()
+void setup(){
 	size(650,650);
 	frameRate(60);
 	background(gray);
+	
 
-;
+};
 
 
 void draw(){
