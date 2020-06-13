@@ -45,7 +45,7 @@ void draw_bunn(color c){
 	ellipse(x+37,y+3,12,13);
 
 	stroke(0);
-  	rect(x+13.5,y+63.5,15,15);//neck
+  	ellipse(x+13.5,y+63.5,10,15);//neck
 
 	stroke(0);
   	fill(#F2ECBA);
